@@ -1,0 +1,840 @@
+<style type="text/css" media="all">
+    .right-banner-div.tile-div p {
+        text-align: left !important;
+        padding: 0 16px;
+    }
+    
+    @media screen and (max-width: 1099px) and (min-width: 320px){
+        .banner-content-wrapper{
+            height: initial !important;
+        }
+}
+</style>
+<div id="${microsite.url}" class="container gdn-promo-container">
+   <div id="outer-container">
+      <div id="inner-container">
+         <div class="section-1 desktop-only">
+            <div class="banner-content-wrapper main-banner" 
+            #if($mainBannerImg)
+            style="background-image: url($mainBannerImg);"
+            #end
+            >
+            #if($mainBannerTxt)
+            <div class="main-banner-txt">
+               $mainBannerTxt
+            </div>
+            #end
+         </div>
+         <div class="main-banner-tile-content">
+            <div class="left-banner-div tile-div">
+               #if($leftBannerTileContent)
+               $leftBannerTileContent
+               #end
+               <div class="banner-btn-wrapper desktop-only">
+                  #if($localSellerRegisterLink)
+                  <a href="$localSellerRegisterLink" class="mc-btn banner-btn">
+                  #if($leftBannerBtn)
+                  $leftBannerBtn
+                  #end
+                  </a>
+                  #end
+               </div>
+            </div>
+            <div class="right-banner-div tile-div">
+               #if($rightBannerTileContent)
+               $rightBannerTileContent
+               #end
+               #if($internationSellerRegisterLink)
+               <div class="banner-btn-wrapper desktop-only">                    
+                  <a href="$internationSellerRegisterLink" class="mc-btn banner-btn btn-blue">
+                  #if($rightBannerBtn)
+                  $rightBannerBtn
+                  #end
+                  </a>                   
+               </div>
+               #end               
+            </div>
+         </div>
+      </div>
+      <div class="section-1 mobile-only">
+         <div class="banner-content-wrapper main-banner"
+         #if($mainBannerImg)
+         style="background: url($mainBannerImg);"
+         #end
+         >
+         #if($mainBannerTxt)
+         <div class="main-banner-txt">
+            $mainBannerTxt
+         </div>
+         #end
+         <div class="left-banner-div tile-div">
+            #if($leftBannerTileContent)
+            $leftBannerTileContent
+            #end                  
+            <div class="mobile-only">
+               #if($localSellerRegisterLink)
+               <a href="$localSellerRegisterLink">
+                  #end
+                  <div class="bli-right-arrow bli-arrow-style"></div>
+                  #if($localSellerRegisterLink)
+               </a>
+               #end
+            </div>
+         </div>
+         <div class="right-banner-div tile-div">
+            #if($rightBannerTileContent)
+            $rightBannerTileContent
+            #end                
+            <div class="mobile-only">
+               #if($internationSellerRegisterLink)                 
+               <a href="$internationSellerRegisterLink">
+                  #end
+                  <div class="bli-right-arrow bli-arrow-style"></div>
+                  #if($internationSellerRegisterLink)
+               </a>
+               #end      
+            </div>
+         </div>
+      </div>
+   </div>
+   <br class="desktop-only"/>
+   <br class="desktop-only"/>
+   <br class="desktop-only"/>
+   <div class="section-2">
+      <div class="section-title" id="section-2-title">
+         #if($section2Title)
+         $section2Title
+         #end
+      </div>
+      <div class="tile-wrapper">
+         <div class="tile" id="tile-1">
+            #if($section2Tile1ImgUrl)
+            <a href="$section2Tile1ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile1Img)  
+                  src="$section2Tile1Img"
+                  #end
+                  #if($section2Tile1ImgAlt)
+                  $section2Tile1ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile1Txt)
+               $section2Tile1Txt
+               #end
+               #if($section2Tile1ImgUrl)   
+            </a>
+            #end
+         </div>
+         <div class="tile" id="tile-2">
+            #if($section2Tile2ImgUrl)
+            <a href="$section2Tile2ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile2Img)  
+                  src="$section2Tile2Img"
+                  #end
+                  #if($section2Tile2ImgAlt)
+                  $section2Tile2ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile2ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile2Txt)
+            $section2Tile2Txt
+            #end
+         </div>
+         <div class="tile" id="tile-3">
+            #if($section2Tile3ImgUrl)
+            <a href="$section2Tile3ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile3Img)  
+                  src="$section2Tile3Img"
+                  #end
+                  #if($section2Tile3ImgAlt)
+                  $section2Tile3ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile3ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile3Txt)
+            $section2Tile3Txt
+            #end
+         </div>
+         <div class="tile" id="tile-4">
+            #if($section2Tile4ImgUrl)
+            <a href="$section2Tile4ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile4Img)  
+                  src="$section2Tile4Img"
+                  #end
+                  #if($section2Tile4ImgAlt)
+                  $section2Tile4ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile4ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile4Txt)
+            $section2Tile4Txt
+            #end
+         </div>
+         <div class="tile" id="tile-5">
+            #if($section2Tile5ImgUrl)
+            <a href="$section2Tile5ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile5Img)  
+                  src="$section2Tile5Img"
+                  #end
+                  #if($section2Tile5ImgAlt)
+                  $section2Tile5ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile5ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile5Txt)
+            $section2Tile5Txt
+            #end
+         </div>
+         <div class="tile" id="tile-6">
+            #if($section2Tile6ImgUrl)
+            <a href="$section2Tile6ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile6Img)  
+                  src="$section2Tile6Img"
+                  #end
+                  #if($section2Tile6ImgAlt)
+                  $section2Tile6ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile6ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile6Txt)
+            $section2Tile6Txt
+            #end
+         </div>
+         <div class="tile" id="tile-7">
+            #if($section2Tile7ImgUrl)
+            <a href="$section2Tile7ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile7Img)  
+                  src="$section2Tile7Img"
+                  #end
+                  #if($section2Tile7ImgAlt)
+                  $section2Tile7ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile7ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile7Txt)
+            $section2Tile7Txt
+            #end
+         </div>
+         <div class="tile" id="tile-8">
+            #if($section2Tile8ImgUrl)
+            <a href="$section2Tile8ImgUrl">
+               #end
+               <div class="tile-img-wrapper"><img 
+                  #if($section2Tile8Img)  
+                  src="$section2Tile8Img"
+                  #end
+                  #if($section2Tile8ImgAlt)
+                  $section2Tile8ImgAlt
+                  #end
+                  />
+               </div>
+               #if($section2Tile8ImgUrl)   
+            </a>
+            #end    
+            #if($section2Tile8Txt)
+            $section2Tile8Txt
+            #end
+         </div>
+      </div>
+   </div>
+   <div class="section-3 bg-blue-img" 
+   #if($bgBlueImg)          
+   style="background-image: url($bgBlueImg)"          
+   #end
+   >
+   #if($section3Title)
+   $section3Title
+   #end
+   <div class="section-content section-3-content">
+      #if($section3Content)
+      $section3Content
+      #end
+   </div>
+   <div class="section-3-tile-wrapper flex-desktop-only">
+      <div class="tile bg-white disp-inline-grid section-3-tile" id="section-3-tile-1">
+         #if($section3Tile1ImgUrl)
+         <a href="$section3Tile1ImgUrl">
+            #end   
+            <div class="tile-img-wrapper">
+               #if($section3Tile1Img)
+               <img src="$section3Tile1Img" 
+               #if($section3Tile1ImgAlt)
+               alt="$section3Tile1ImgAlt"
+               #end
+               />
+               #end
+            </div>
+            #if($section3Tile1ImgUrl)  
+         </a>
+         #end                
+         #if($section3Tile1Txt)
+         $section3Tile1Txt
+         #end
+      </div>
+      <div class="tile bg-white disp-inline-grid section-3-tile" id="section-3-tile-2">
+         #if($section3Tile2ImgUrl)
+         <a href="$section3Tile2ImgUrl">
+            #end  
+            <div class="tile-img-wrapper">
+               #if($section3Tile2Img)
+               <img src="$section3Tile2Img" 
+               #if($section3Tile2ImgAlt)
+               alt="$section3Tile2ImgAlt"
+               #end
+               />
+               #end
+            </div>
+            #if($section3Tile2ImgUrl)  
+         </a>
+         #end
+         #if($section3Tile2Txt)
+         $section3Tile2Txt
+         #end
+      </div>
+   </div>
+   <div class="section-3-tile-wrapper mobile-only">
+      <div class="tile bg-white section-3-tile" id="mobile-section-3-tile-1">
+         #if($section3Tile1ImgUrl)
+         <a href="$section3Tile1ImgUrl">
+            #end  
+            <div class="tile-img-wrapper disp-inline-blk">
+               <div class="img-align">
+                  #if($section3Tile1Img)
+                  <img src="$section3Tile1Img" 
+                  #if($section3Tile1ImgAlt)
+                  alt="$section3Tile1ImgAlt"
+                  #end
+                  />
+                  #end
+               </div>
+            </div>
+            #if($section3Tile1ImgUrl)  
+         </a>
+         #end
+         <div class="disp-inline-blk">
+            #if($section3Tile1Txt)
+            $section3Tile1Txt
+            #end
+         </div>
+      </div>
+      <div class="tile bg-white section-3-tile" id="mobile-section-3-tile-2">
+         #if($section3Tile2ImgUrl)
+         <a href="$section3Tile2ImgUrl">
+            #end  
+            <div class="tile-img-wrapper disp-inline-blk">
+               <div class="img-align">
+                  #if($section3Tile2Img)
+                  <img src="$section3Tile2Img"
+                  #if($section3Tile2ImgAlt)
+                  alt="$section3Tile2ImgAlt"
+                  #end
+                  />
+                  #end
+               </div>
+            </div>
+            #if($section3Tile2ImgUrl)
+         </a>
+         #end
+         <div class="disp-inline-blk">
+            #if($section3Tile2Txt)
+            $section3Tile2Txt
+            #end
+         </div>
+      </div>
+   </div>
+</div>
+<div class="section-4">
+   #if($section4Title)
+   <div class="section-title">             
+      $section4Title            
+   </div>
+   #end
+   <div class="tile-wrapper width-92-2-prcnt section-4-tile-wrapper">
+      <div class="tile section-4-tile" id="section4-tile-1">
+         #if($section4Tile1ImgUrl)
+         <a href="$section4Tile1ImgUrl">
+            #end 
+            <div class="tile-img-wrapper">
+               <img src="$section4Tile1Img" 
+               #if($$section4Tile1ImgAlt)
+               alt="$section4Tile1ImgAlt"
+               #end
+               />
+            </div>
+            #if($section4Tile1Txt)
+            $section4Tile1Txt
+            #end
+            #if($section4Tile1ImgUrl) 
+         </a>
+         #end
+      </div>
+      <div class="tile-arrow desktop-only">
+         <div class="arrow-img bli-right-arrow"></div>
+      </div>
+      <div class="tile section-4-tile" id="section4-tile-2">
+         #if($section4Tile2ImgUrl)
+         <a href="$section4Tile1ImgUrl">
+            #end 
+            #if($section4Tile2Img)
+            <div class="tile-img-wrapper">
+               <img src="$section4Tile2Img" 
+               #if($section4Tile2ImgAlt)
+               alt="$section4Tile2ImgAlt"
+               #end
+               />
+            </div>
+            #end               
+            #if($section4Tile2Txt)
+            $section4Tile2Txt
+            #end
+            #if($section4Tile2ImgUrl) 
+         </a>
+         #end
+      </div>
+      <div class="tile-arrow desktop-only">
+         <div class="arrow-img bli-right-arrow"></div>
+      </div>
+      <div class="tile section-4-tile" id="section4-tile-3">
+         #if($section4Tile3ImgUrl)
+         <a href="$section4Tile3ImgUrl">
+            #end  
+            #if($section4Tile3Img)
+            <div class="tile-img-wrapper">
+               <img src="$section4Tile3Img" 
+               #if($section4Tile3ImgAlt)
+               alt="$section4Tile3ImgAlt"
+               #end
+               />
+            </div>
+            #end
+            #if($section4Tile3Txt)
+            $section4Tile3Txt
+            #end
+            #if($section4Tile3ImgUrl) 
+         </a>
+         #end             
+      </div>
+      <div class="tile-arrow desktop-only">
+         <div class="arrow-img bli-right-arrow"></div>
+      </div>
+      <div class="tile section-4-tile" id="section4-tile-4">
+         #if($section4Tile4ImgUrl)
+         <a href="$section4Tile4ImgUrl">
+            #end  
+            #if($section4Tile4Img)
+            <div class="tile-img-wrapper">
+               <img src="$section4Tile4Img" 
+               #if($section4Tile4ImgAlt)
+               alt="$section4Tile4ImgAlt"
+               #end
+               />
+            </div>
+            #end
+            #if($section4Tile4Txt)
+            $section4Tile4Txt
+            #end
+      </div>
+   </div>
+</div>
+<!--video without anchor--> 
+<div class="section-5">
+<div class="section-title">
+#if($section5Title)  
+$section5Title
+#end
+</div>  
+<div class="tile-wrapper width-92-2-prcnt video-tile-wrapper">
+<div class="tile video-tile" id="section-5-tile-1">
+#if($section5Tile1Video)
+<div class="tile-img-wrapper"><iframe width="280" height="157" src="https://www.youtube.com/embed/$section5Tile1Video"></iframe></div>
+#end
+#if($section5Tile1Txt)
+$section5Tile1Txt
+#end                
+</div>
+<div class="tile video-tile" id="section-5-tile-2">
+#if($section5Tile2Video)
+<div class="tile-img-wrapper"><iframe width="280" height="157" src="https://www.youtube.com/embed/$section5Tile2Video"></iframe></div>
+#end    
+#if($section5Tile2Txt)
+$section5Tile2Txt
+#end                
+</div>
+<div class="tile video-tile" id="section-5-tile-3">
+#if($section5Tile3Video)
+<div class="tile-img-wrapper"><iframe width="280" height="157" src="https://www.youtube.com/embed/$section5Tile3Video"></iframe></div>
+#end  
+#if($section5Tile3Txt)
+$section5Tile3Txt
+#end
+</div>
+<div class="tile video-tile" id="section-5-tile-4">
+#if($section5Tile4Video)
+<div class="tile-img-wrapper"><iframe width="280" height="157" src="https://www.youtube.com/embed/$section5Tile4Video"></iframe></div>                    
+#end
+#if($section5Tile4Txt)
+$section5Tile4Txt
+#end
+</div>
+</div>
+</div> 
+<!-- EOF video -without anchor -->
+<div class="section-6">
+<div class="section-title margin-bottom-pt-5em">
+#if($section6Title)
+$section6Title
+#end
+</div>
+<div class="section-content video-section-content desktop-only">
+#if($section6TitleDesc)
+$section6TitleDesc
+#end
+</div>
+<div class="event-tile-wrapper">
+<div class="event-tile-wrapper-title desktop-only">
+#if($eventTileWrapperTitle)  
+$eventTileWrapperTitle
+#end
+</div> 
+<div class="events-wrapper">
+<div class="tile event-tile" id="section-6-tile-1">
+#if($section6Tile1Img)
+#if($section6Tile1ImgUrl)                
+<a href="$section6Tile1ImgUrl">
+#end  
+<div class="tile-img-wrapper">
+<img src="$section6Tile1Img"
+#if($section6Tile1ImgAlt)
+alt="$section6Tile1ImgAlt"
+#end
+/>
+</div>
+#if($section6Tile1ImgUrl)   
+</a>
+#end
+#end
+<div class="event-content-wrapper">
+<h6 class="tile-title event-tile-title">
+#if($section6Tile1Title)
+$section6Tile1Title
+#end
+</h6>
+<div class="tile-content">
+<div class="tile-content-row date-row">
+<div class="tile-row-img"><img 
+#if($section6calendarImg)  
+src="$section6calendarImg"
+#end
+/></div>
+<div class="tile-row-content">
+#if($section6Tile1Date)
+$section6Tile1Date
+#end
+</div>    
+</div>
+<div class="tile-content-row venue-row">
+<div class="tile-row-img"><img 
+#if($section6pinImg)
+src="$section6pinImg"
+#end
+/></div>
+<div class="tile-row-content">
+#if($section6Tile1Venue)
+$section6Tile1Venue
+#end
+</div>    
+</div>
+#if($section6Tile1LihatLink && $lihatSelengkapnyaTxt)
+<div class="tile-content-row lihat-btn-row">
+#if($section6Tile1LihatLink)
+<a href="$section6Tile1LihatLink">              
+<div class="event-btn">
+#if($lihatSelengkapnyaTxt)
+$lihatSelengkapnyaTxt
+#end
+</div>
+</a>
+#end  
+</div>
+#end
+</div>
+</div>    
+</div>
+<div class="tile event-tile" id="section-6-tile-2">
+#if($section6Tile2Img)
+#if($section6Tile2ImgUrl)                
+<a href="$section6Tile2ImgUrl">
+#end  
+<div class="tile-img-wrapper">
+<img src="$section6Tile2Img"
+#if($section6Tile2ImgAlt)
+alt="$section6Tile2ImgAlt"
+#end
+/>
+</div>
+#if($section6Tile2ImgUrl)   
+</a>
+#end
+#end
+<div class="event-content-wrapper">
+<h6 class="tile-title event-tile-title">
+#if($section6Tile2Title)
+$section6Tile2Title
+#end
+</h6>
+<div class="tile-content">
+<div class="tile-content-row date-row">
+<div class="tile-row-img"><img 
+#if($section6calendarImg)  
+src="$section6calendarImg"
+#end/></div>
+<div class="tile-row-content">
+#if($section6Tile2Date)
+$section6Tile2Date
+#end
+</div>    
+</div>
+<div class="tile-content-row venue-row">
+<div class="tile-row-img"><img  
+#if($section6pinImg)
+src="$section6pinImg"
+#end
+/></div>
+<div class="tile-row-content">
+#if($section6Tile2Venue)
+$section6Tile2Venue
+#end
+</div>   
+</div>
+#if($section6Tile2LihatLink && $lihatSelengkapnyaTxt)
+<div class="tile-content-row lihat-btn-row">
+#if($section6Tile2LihatLink)
+<a href="$section6Tile2LihatLink">              
+<div class="event-btn">
+#if($lihatSelengkapnyaTxt)
+$lihatSelengkapnyaTxt
+#end
+</div>
+</a>
+#end  
+</div>
+#end 
+</div>
+</div> 
+</div>
+<div class="tile event-tile" id="section-6-tile-3">
+#if($section6Tile3Img)
+#if($section6Tile3ImgUrl)                
+<a href="$section6Tile3ImgUrl">
+#end  
+<div class="tile-img-wrapper">
+<img src="$section6Tile3Img"
+#if($section6Tile3ImgAlt)
+alt="$section6Tile3ImgAlt"
+#end
+/>
+</div>
+#if($section6Tile3ImgUrl)   
+</a>
+#end
+#end
+<div class="event-content-wrapper">
+<h6 class="tile-title event-tile-title">
+#if($section6Tile3Title)
+$section6Tile3Title
+#end
+</h6>
+<div class="tile-content">
+<div class="tile-content-row">
+<div class="tile-row-img"><img 
+#if($section6calendarImg)  
+src="$section6calendarImg"
+#end
+/></div>
+<div class="tile-row-content" id="">
+#if($section6Tile3Date)
+$section6Tile3Date
+#end
+</div>     
+</div>
+<div class="tile-content-row">
+<div class="tile-row-img"><img 
+#if($section6pinImg)
+src="$section6pinImg"
+#end  
+/></div>
+<div class="tile-row-content">
+#if($section6Tile3Venue)
+$section6Tile3Venue
+#end
+</div>    
+</div>
+#if($section6Tile3LihatLink && $lihatSelengkapnyaTxt)
+<div class="tile-content-row">
+#if($section6Tile3LihatLink)
+<a href="$section6Tile3LihatLink">              
+<div class="event-btn">
+#if($lihatSelengkapnyaTxt)
+$lihatSelengkapnyaTxt
+#end
+</div>
+</a>
+#end  
+</div>
+#end
+</div>
+</div> 
+</div>    
+</div>          
+</div>
+</div>
+<div class="section-7 bg-accordion-img" style="background-image: url($accordionRightBgImg);">
+   <div  class="accordion-wrapper">
+      <div class="accordion-title">
+         #if($section7Title)
+         $section7Title
+         #end
+      </div>
+      <div class="accordion-content">
+         <button class="accordion">
+         #if($accordionPanel1Title)  
+         $accordionPanel1Title
+         #end
+         </button>
+         <div class="panel">
+            #if($accordionPanel1Content)
+            $accordionPanel1Content
+            #end
+         </div>
+         <button class="accordion">
+         #if($accordionPanel2Title)  
+         $accordionPanel2Title
+         #end
+         </button>
+         <div class="panel">
+            #if($accordionPanel2Content)
+            $accordionPanel2Content
+            #end
+         </div>
+         <button class="accordion">
+         #if($accordionPanel3Title)  
+         $accordionPanel3Title
+         #end
+         </button>
+         <div class="panel">
+            #if($accordionPanel3Content)
+            $accordionPanel3Content
+            #end
+         </div>
+         <button class="accordion">
+         #if($accordionPanel4Title)  
+         $accordionPanel4Title
+         #end
+         </button>
+         <div class="panel">
+            #if($accordionPanel4Content)
+            $accordionPanel4Content
+            #end
+         </div>
+         <button class="accordion">
+         #if($accordionPanel5Title)  
+         $accordionPanel5Title
+         #end
+         </button>
+         <div class="panel">
+            #if($accordionPanel5Content)
+            $accordionPanel5Content
+            #end
+         </div>
+      </div>
+      #if($accordionLihatLink && $accordionLihatLink!="")
+      <div class="lihat-wrapper">
+         <a 
+         #if($accordionLihatLink)
+         href="$accordionLihatLink"
+         #end
+         >
+         <div class="accordion-lihat-btn">
+            #if($lihatSelengkapnyaTxt)
+            $lihatSelengkapnyaTxt
+            #end
+         </div>
+         </a>
+      </div>
+      #end
+   </div>
+   <div class="chat-info-wrapper">
+      #if($chatImg)
+      <div class="chat-img-wrapper"><img src="$chatImg"
+         #if($chatImgAlt)
+         alt="$chatImgAlt"
+         #end
+         />
+      </div>
+      #end
+      <div class="chat-content-wrapper">
+         <div class="chat-content-title margin-btm-pt78-em">
+            #if($chatTitle)  
+            $chatTitle
+            #end
+         </div>
+         <div class="chat-content margin-btm-pt78-em">
+            #if($chatContentTxt)
+            $chatContentTxt
+            #end
+         </div>
+      </div>
+   </div>
+</div>
+<div class="section-8 bg-footer" 
+#if($footerImg)
+style="background-image: url($footerImg);"
+#end>
+<div class="footer-content">
+   #if($footerContent)
+   $footerContent
+   #end
+   #if($footerbtnLink)
+   <a  href="$footerbtnLink" class="daftar-btn">
+   #if($footerBtnText)  
+   $footerBtnText
+   #end
+   </a>
+   #end 
+</div>
+</div>   
+</div>    
+</div>
+</div>
